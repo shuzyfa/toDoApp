@@ -178,8 +178,7 @@ const App = () => {
       <Modal
         animationType="fade"
         transparent={true}
-        visible={modalVisible}
-      >
+        visible={modalVisible}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <View style={{ width: '100%', }}>
@@ -205,14 +204,12 @@ const App = () => {
             <View style={{ flexDirection: 'row' }}>
               <TouchableOpacity
                 style={styles.add}
-                onPress={setToDo}
-              >
+                onPress={setToDo}>
                 <Text style={styles.textStyle}>ADD</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={[styles.add, styles.cancel]}
-                onPress={() => setModalVisible(false)}
-              >
+                onPress={() => setModalVisible(false)}>
                 <Text style={styles.textStyle}>Cancel</Text>
               </TouchableOpacity>
             </View>
@@ -237,7 +234,7 @@ const App = () => {
           </View>
         </TouchableOpacity>
       </View>
-    </SafeAreaView >
+    </SafeAreaView>
   );
 };
 
